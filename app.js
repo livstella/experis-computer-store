@@ -1,5 +1,14 @@
 document.getElementById("loan-button").onclick = function() {
-    document.getElementById("bank-balance").innerHTML ="42"
+    let loanPromt = prompt("How much would you like to loan?");
+
+    if (Number(loanPromt) < Number(document.getElementById("bank-balance").innerHTML)) {
+        alert("You've got a loan")
+        document.getElementById("bank-balance").innerHTML =Number(document.getElementById("bank-balance").innerHTML)+Number(loanPromt)
+      }else{
+          alert("You cannot loan more than double you bank balance")
+      }
+    
+   
 }
 
 
@@ -7,7 +16,7 @@ document.getElementById("loan-button").onclick = function() {
 //Function for workbutton
 document.getElementById("work-button").onclick = function() {
    let workBalance=document.getElementById("work-balance").innerHTML
-   document.getElementById("work-balance").innerHTML = parseInt(workBalance,10)+100
+   document.getElementById("work-balance").innerHTML = Number(workBalance)+100
    
 }
 
@@ -16,7 +25,7 @@ document.getElementById("bank-button").onclick = function() {
 
     let bankBalance=document.getElementById("bank-balance").innerHTML
     let workBalance=document.getElementById("work-balance").innerHTML
-    document.getElementById("bank-balance").innerHTML = parseInt(bankBalance,10)+ parseInt(workBalance,10)
+    document.getElementById("bank-balance").innerHTML = Number(bankBalance)+ Number(workBalance)
 
     document.getElementById("work-balance").innerHTML =0
 }
