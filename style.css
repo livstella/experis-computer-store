@@ -9,11 +9,13 @@ h1 {
     display: flex;
     background-color: blueviolet;
     border-style: solid;
+    height: 80vw;
 }
   .inside-div{
       background-color: red;
       border-style: solid;
       width: 80%;
+      height: 80%;
       padding: 2%;
       margin: 2%;
 

@@ -12,6 +12,7 @@
     <div id="wrapper-div">
         <div class="inside-div">
             <h3>Bank </h3>
+            <p>Current loan: <span id="loan-balance">0</span>kr.</p>
             <p>Balance: <span id="bank-balance">200</span>kr.</p>
             <button id="loan-button">get a loan</button>
         </div>
@@ -22,21 +23,21 @@
             <button id="work-button">Work</button>
         </div>
         <div class="inside-div">
-            <h3>third div inside wrapper div </h3>
-            <form action="/action_page.php">
-                <label for="cars">Choose a car:</label>
-                <select name="cars" id="cars">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="opel">Opel</option>
-                  <option value="audi">Audi</option>
+            <h3>Computer </h3>
+            <p id="computer-text"></p>
+                <label for="computers">Choose a computer:</label>
+                <select name="computers" id="computers">
                 </select>
                 <br><br>
-                <input type="submit" value="Submit">
-              </form>
+             <div>
+                 <h4>Information on selected computer</h4>
+                 <p id="description-computer"></p>
+                 <p id="specs-computer"></p>
+                 <p id="price-computer"></p>
+             </div> 
+             <button id="test-button" > Buy computer </button>
         </div>
     </div>    
-    <div><h1>bottom div</h1></div>
 <script src="app.js"></script>
 </body>
 </html>
