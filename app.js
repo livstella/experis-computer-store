@@ -55,6 +55,12 @@ document.getElementById("loan-button").onclick = function() {
     document.getElementById("loan-balance").innerText-=Number(document.getElementById("work-balance").innerText)*0.1
     document.getElementById("bank-balance").innerText=Number(document.getElementById("work-balance").innerText)*0.9+Number(document.getElementById("bank-balance").innerText)
     document.getElementById("work-balance").innerText=0
+    if(Math.sign(Number(document.getElementById("loan-balance").innerText))==-1){
+      document.getElementById("bank-balance").innerText=Number(document.getElementById("bank-balance").innerText)+Number(document.getElementById("loan-balance").innerText*-1)
+      document.getElementById("loan-balance").innerText=0  
+
+
+    }
   }}
   
   
