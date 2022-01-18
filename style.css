@@ -20,6 +20,10 @@ h1 {
       margin: 2%;
 
   }
-  #loan-button{
-      color: crimson;
+
+  img {
+    width: 80%;
+    
+    object-fit: cover;
   }
+  
