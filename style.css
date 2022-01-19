@@ -6,10 +6,10 @@ h1 {
     display: block;
 }
 #wrapper-div{
-    display: flex;
+
     background-color: blueviolet;
     border-style: solid;
-    height: 80vw;
+    height: 100vw;
 }
   .inside-div{
       background-color: red;
@@ -18,14 +18,43 @@ h1 {
       height: 80%;
       padding: 2%;
       margin: 2%;
+      
 
   }
 
+  .bank-work-wrapper{
+    display: flex;
+    height: 20%;
+    margin-bottom: 8%;
+  }
+
   img {
-    width: 80%;
+    width: 40%;
     object-fit: cover;
     display: block;
+    margin-right: auto;
+  }
+  
+  #computer-wrapper{
+    display: flex;
+    padding: 3%;
+    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
+    height: 50%;
+    justify-content: space-around
+    
+  }
+  #right-div{
+    width: 70%;
+    
+    margin-left: 30%;
+
+  }
+
+  #left-div{
+    width: 30%;
+   
+
   }
   
