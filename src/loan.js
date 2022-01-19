@@ -16,11 +16,13 @@ export function loanFunction(){
           }
         
         }
-     //Adds repay-button
-     let repayButton=document.createElement('button')
-     document.getElementById("repay-button-area").append(repayButton)
+     //Shows repay-button
+     /*let repayButton=document.createElement('button')
+     document.getElementById("button-div").append(repayButton)
      repayButton.innerText="Repay Loan"
-     repayButton.id="repay-button"
+     repayButton.id="repay-button"*/
+     document.getElementById("repay-button").style.display = "inline";
+     
   
      //Function for repaying
      document.getElementById("repay-button").onclick = function(){
@@ -29,7 +31,7 @@ export function loanFunction(){
   
       document.getElementById("bank-balance").innerText-=loanBalance   
       document.getElementById("loan-balance").innerText=0
-      document.getElementById("repay-button").remove("repay-button")
+      document.getElementById("repay-button").style.display = "none";
      }
 
 }

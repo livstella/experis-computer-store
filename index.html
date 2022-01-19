@@ -14,8 +14,11 @@
             <h3>Bank </h3>
             <p>Current loan: <span id="loan-balance">0</span>kr.</p>
             <p>Balance: <span id="bank-balance">200</span>kr.</p>
+            <div id="button-div">
             <button id="loan-button">get a loan</button>
+            <button id="repay-button">Repay loan</button>
             <div id="repay-button-area"></div>
+        </div>
         </div>
 
         <div class="inside-div">
@@ -32,6 +35,7 @@
                  <p id="computer-text"></p>
                 <label for="computers">Choose a computer:</label>
                 <select name="computers" id="computers">
+                    <option value="initial-value">Choose from this dropdown</option>
                 </select>
                 <br><br>
                 <button id="buy-button" > Buy computer </button>
@@ -39,7 +43,7 @@
             </div>
 
              <div id="right-div">
-                 <h4>Information on selected computer</h4>
+                 <h4>Information and price on selected computer</h4>
                  <img id="image-computer" src=""> 
                  <p id="description-computer"></p>
                  <p id="price-computer"></p>               
